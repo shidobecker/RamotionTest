@@ -8,4 +8,23 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+
+  <style name="AppNoActionBar" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="MainButtonsStyle">
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:background">@drawable/main_buttons_gradient</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">8dp</item>
+    <item name="android:layout_marginTop">8dp</item>
+    <item name="android:layout_marginEnd">8dp</item>
+  </style>
+
 </resources>

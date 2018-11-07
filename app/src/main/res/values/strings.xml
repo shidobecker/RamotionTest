@@ -1,3 +1,12 @@
 <resources>
   <string name="app_name">RamotionTest</string>
+  <string name="toolbar_example">ToolBar Example</string>
+  <string name="garland_view_example">Garland View Example</string>
+  <string name="show_onboarding_at_start">Show Onboarding at start</string>
+  <string name="card_slider_example">Card Slider Example</string>
+  <string name="expading_collection_example">Expading Collection Example</string>
+  <string name="direct_select_example">Direct Select Example</string>
+  <string name="fluid_slider_example">Fluid Slider Example</string>
+  <string name="folding_cell_example">Folding Cell Example</string>
+  <string name="ramotion_libraries_example_app">Ramotion Libraries Example App</string>
 </resources>

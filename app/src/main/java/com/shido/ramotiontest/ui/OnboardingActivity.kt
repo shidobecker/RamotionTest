@@ -1,5 +1,6 @@
 package com.shido.ramotiontest.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,8 +14,16 @@ class OnboardingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding)
-        setup()
+        val sharedPreferences = getSharedPreferences("RAMOTION_PREFS", Context.MODE_PRIVATE)
+
+        if(sharedPreferences.getBoolean(MainActivity.showOnboarding, false)) {
+            setContentView(R.layout.activity_onboarding)
+            setup()
+        }else{
+            val intent = Intent(this@OnboardingActivity, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
 
@@ -39,6 +48,7 @@ class OnboardingActivity : AppCompatActivity() {
         onBoardingFragment.setOnRightOutListener {
             val intent = Intent(this@OnboardingActivity, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
