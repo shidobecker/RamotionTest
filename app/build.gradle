@@ -46,5 +46,7 @@ dependencies {
     //Ramotion Libs
     implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
     implementation 'com.ramotion.navigationtoolbar:navigation-toolbar:0.1.0'
+    implementation 'com.ramotion.cardslider:card-slider:0.3.0'
+
 
 }

@@ -11,17 +11,15 @@
     android:theme="@style/AppTheme">
     <activity
       android:name=".ui.MainActivity"
-      android:theme="@style/AppNoActionBar">
-
-    </activity>
+      android:theme="@style/AppNoActionBar"></activity>
     <activity android:name=".ui.OnboardingActivity">
-
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name=".ui.CardSliderActivity"></activity>
   </application>
 
 </manifest>
